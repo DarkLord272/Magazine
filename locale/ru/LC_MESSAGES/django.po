@@ -1,0 +1,235 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-14 13:01+0000\n"
+"PO-Revision-Date: 2022-12-14 23:09+0000\n"
+"Last-Translator:   <root@root.eu>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: cart/forms.py:22 cart/templates/cart/detail.html:12
+msgid "Quantity"
+msgstr "Количество"
+
+#: cart/templates/cart/detail.html:6
+msgid "Your shopping cart"
+msgstr "Ваша корзина"
+
+#: cart/templates/cart/detail.html:10
+msgid "Image"
+msgstr ""
+
+#: cart/templates/cart/detail.html:11
+msgid "Product"
+msgstr "Товар"
+
+#: cart/templates/cart/detail.html:13 cart/templates/cart/detail.html:30
+msgid "Remove"
+msgstr ""
+
+#: cart/templates/cart/detail.html:14
+msgid "Unit price"
+msgstr "Цена за штуку"
+
+#: cart/templates/cart/detail.html:15
+msgid "Price"
+msgstr "Цена"
+
+#: cart/templates/cart/detail.html:38
+#: orders/templates/orders/order/create.html:29
+msgid "Total"
+msgstr "Итого"
+
+#: cart/templates/cart/detail.html:46
+msgid "Continue shopping"
+msgstr "Продолжить покупки"
+
+#: cart/templates/cart/detail.html:49
+#: orders/templates/orders/order/create.html:5
+#: orders/templates/orders/order/create.html:9
+msgid "Checkout"
+msgstr "Заказать"
+
+#: myshop/urls.py:11
+msgid "cart/"
+msgstr ""
+
+#: myshop/urls.py:12
+msgid "orders/"
+msgstr ""
+
+#: orders/models.py:7
+msgid "First name"
+msgstr "Имя"
+
+#: orders/models.py:8
+msgid "Last name"
+msgstr "Фамилия"
+
+#: orders/models.py:9
+msgid "Email"
+msgstr "Почта"
+
+#: orders/models.py:10
+msgid "Address"
+msgstr "Адрес"
+
+#: orders/models.py:11
+msgid "Postal code"
+msgstr "Индекс"
+
+#: orders/models.py:12
+msgid "City"
+msgstr "Город"
+
+#: orders/templates/orders/order/create.html:12
+msgid "Your order"
+msgstr "Корзина"
+
+#: orders/templates/orders/order/create.html:22
+#, python-format
+msgid ""
+"\n"
+"            \"%(code)s\" (%(discount)s%% off)\n"
+"          "
+msgstr ""
+
+#: orders/templates/orders/order/create.html:34
+msgid "Place order"
+msgstr "Заказать"
+
+#: orders/templates/orders/order/created.html:5
+#: orders/templates/orders/order/created.html:9
+msgid "Thank you"
+msgstr "Спасибо!"
+
+#: orders/templates/orders/order/created.html:10
+#, python-format
+msgid ""
+"\n"
+"    <p>Your order has been successfully completed. Your order number is <strong>%(order_id)s</strong>.</p>\n"
+"  "
+msgstr ""
+
+#: orders/urls.py:9
+msgid "create/"
+msgstr ""
+
+#: shop/templates/shop/base.html:22 shop/templates/shop/base.html:58
+msgid "/en/"
+msgstr "/ru/"
+
+#: shop/templates/shop/base.html:27
+msgid "Language"
+msgstr "Язык"
+
+#: shop/templates/shop/base.html:43
+msgid "Your cart"
+msgstr "Корзина"
+
+#: shop/templates/shop/base.html:46
+msgid "item"
+msgstr "товар"
+
+#: shop/templates/shop/base.html:51
+msgid "Your cart is empty."
+msgstr "Ваша корзина пуста"
+
+#: shop/templates/shop/base.html:59
+msgid "/en/zhenskie-futbolki/"
+msgstr "/ru/zhenskie-futbolki/"
+
+#: shop/templates/shop/base.html:60
+msgid "/en/muzhskie-futbolki/"
+msgstr "/ru/muzhskie-futbolki/"
+
+#: shop/templates/shop/base.html:61
+msgid "/en/oblozhki-na-pasport/"
+msgstr "/ru/oblozhki-na-pasport/"
+
+#: shop/templates/shop/base.html:62
+msgid "/en/chehly-na-telefon/"
+msgstr "/ru/chehly-na-telefon/"
+
+#: shop/templates/shop/product/detail.html:18
+msgid "Add to cart"
+msgstr "Добавить в корзину"
+
+#: shop/templates/shop/product/detail.html:23
+msgid "People who bought this also bought"
+msgstr "Смотрите также"
+
+#: shop/templates/shop/product/list.html:5
+#: shop/templates/shop/product/list.html:29
+msgid "Products"
+msgstr "Товары"
+
+#: shop/templates/shop/product/list.html:12
+msgid "Categories"
+msgstr "Категории"
+
+#: shop/templates/shop/product/list.html:15
+msgid "All"
+msgstr "Все"
+
+#: shop/templates/shop/product/list.html:20
+#, python-format
+msgid ""
+"        \n"
+"\t\t<a href=\"%(c.get_absolute_url)s\">%(name)s</a>\n"
+"\t    "
+msgstr ""
+
+msgid "coupon"
+msgstr "купон"
+
+msgid "Subtotal"
+msgstr "Изначальная цена"
+
+msgid "Apply"
+msgstr "Применить"
+
+msgid "off"
+msgstr "скидка"
+
+#~ msgid "city"
+#~ msgstr "Город"
+
+#~ msgid "My shop"
+#~ msgstr "Мой магазин"
+
+#~ msgid "Men's T-shirts"
+#~ msgstr "Мужские футболки"
+
+#~ msgid "Passport covers"
+#~ msgstr "Обложки на паспорт"
+
+#~ msgid "Phone Cases"
+#~ msgstr "Чехлы на телефон"
+
+#~ msgid "Women's T-shirts"
+#~ msgstr "Женские футболки"
+
+#, python-format
+#~ msgid ""
+#~ "\n"
+#~ "                %(total_items)s item%(total_items_plural)s,\n"
+#~ "                $%(total_price)s\n"
+#~ "              "
+#~ msgstr ""
+#~ "\n"
+#~ "                %(total_items)s товар%(total_items_plural)s,\n"
+#~ "                ₽%(total_price)s\n"
+#~ "              "
