@@ -1,0 +1,99 @@
+{% load i18n %}
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<link rel='icon' href = "{% static "img/logo_head.png"%}" type="image/x-icon">
+<head>
+  <meta charset="utf-8" />
+  <title>{% block title %}{DL272SHOP}{% endblock %}</title>
+  
+  <link rel="stylesheet" href="{% static "css/base.css" %}" >
+  <link rel="stylesheet" type="text/css" href="{% static "slick/slick.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "slick/slick-theme.css" %}">
+  
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="{% static "slick/slick.min.js" %}"></script>
+  
+</head>
+<body>
+  <div id="header">
+    <a href={% trans "/en/" %}><img src= {% static "img/logo.png" %} height= 150px></a>
+    {% get_current_language as LANGUAGE_CODE %}
+    {% get_available_languages as LANGUAGES %}
+    {% get_language_info_list for LANGUAGES as languages %}
+    <div class="languages">
+      <p>{% trans "Language" %}:</p>
+      <ul class="languages">
+        {% for language in languages %}
+          <li>
+            <a href="/{{ language.code }}/" {% if language.code == LANGUAGE_CODE %} class="selected"{% endif %}>
+              {{ language.name_local }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div id="subheader">
+    <div class="cart">
+      {% with total_items=cart|length %}
+          {% if cart|length > 0 %}
+            {% trans "Your cart" %}
+            <a href="{% url "cart:cart_detail" %}">
+              
+                {{ total_items }} {% trans "item" %} {{ total_items_plural }},
+                ₽{{ cart.get_total_price }}
+              
+            </a>
+          {% else %}
+            {% trans "Your cart is empty." %}
+          {% endif %}
+        {% endwith %}
+    </div>
+  </div>
+
+ <div class="banner">
+        <div><a href={% trans "/en/" %}><img src= {% static "img/banner1.jpg" %} width=1000 alt="slide 1"></a></div>
+        <div><a href={% trans "/en/zhenskie-futbolki/" %}><img src= {% static "img/banner4.jpg" %} width=1000 alt="slide 2"></a></div>
+        <div><a href={% trans "/en/muzhskie-futbolki/" %}><img src= {% static "img/banner5.jpg" %} width=1000 alt="slide 3"></a></div>
+		<div><a href={% trans "/en/oblozhki-na-pasport/" %}><img src= {% static "img/banner2.jpg" %} width=1000 alt="slide 4"></a></div>
+		<div><a href={% trans "/en/chehly-na-telefon/" %}><img src= {% static "img/banner3.jpg" %} width=1000 alt="slide 5"></a></div>
+
+ </div>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.banner').slick({
+		dots: true,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 1,
+		centerMode: true,
+		variableWidth: true,
+		adaptiveHeight: false,
+		autoplay: true,
+		autoplaySpeed: 5000
+		
+		
+      });
+    });
+  </script>
+  
+  <div id="content">
+    {% block content %}
+    {% endblock %}
+  </div>
+  <div class="navbar">
+  <center>
+  Интернет-магазин DL272SHOP написан и переведен Dark_Lord272
+  <br>
+  Сайт написан на Django версии 4.1.4
+  <br>
+  ©Copyright 2022-2023
+  </center>	
+</div>
+</body>
+
+</html>
